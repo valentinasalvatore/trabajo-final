@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice Vertical de Secciones</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            scroll-behavior: smooth; /* Desplazamiento suave */
+        }
+
+        /* Índice */
+        .indice {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .indice ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .indice li {
+            margin-bottom: 10px;
+        }
+
+        .indice a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .indice a:hover {
+            text-decoration: underline;
+        }
+
+        /* Secciones */
+        section {
+            padding: 50px 20px;
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        /* Estilo para que cada sección ocupe el alto de la ventana */
+        .seccion {
+            height: 100vh; /* Cada sección ocupará el 100% del alto de la pantalla */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Índice (Tabla de Contenidos) -->
+    <div class="indice">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#seccion1">Sección 1: Introducción</a></li>
+            <li><a href="#seccion2">Sección 2: Desarrollo</a></li>
+            <li><a href="#seccion3">Sección 3: Conclusión</a></li>
+        </ul>
+    </div>
+
+    <!-- Sección 1 -->
+    <section id="seccion1" class="seccion">
+        <h2>Sección 1: Introducción</h2>
+        <p>Esta es la introducción del documento. Aquí se presenta el tema y el objetivo del contenido.</p>
+    </section>
+
+    <!-- Sección 2 -->
+    <section id="seccion2" class="seccion">
+        <h2>Sección 2: Desarrollo</h2>
+        <p>Esta sección cubre el desarrollo del tema en detalle. Se pueden agregar subsecciones y contenido relevante.</p>
+    </section>
+
+    <!-- Sección 3 -->
+    <section id="seccion3" class="seccion">
+        <h2>Sección 3: Conclusión</h2>
+        <p>Esta es la conclusión del documento. Aquí se resumen los puntos principales y se dan las conclusiones finales.</p>
+    </section>
+
+</body>
+</html>
